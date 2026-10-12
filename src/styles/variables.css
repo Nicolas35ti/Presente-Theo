@@ -1,0 +1,20 @@
+:root {
+  /* fundo */
+  --sky: #bcd8e8;
+  --cyan: #45bfdc;
+  --lavender: #b8a9ec;
+
+  /* folha de caderno */
+  --paper: #eef8fd;
+  --paper-dots: #8fc3dc;
+  --ink: #5f8fe0;        /* títulos e campos */
+  --ink-body: #3f6d94;   /* texto corrido */
+  --pink: #ffc2d6;
+
+  --white: #fff;
+  --text-shadow: 0 2px 6px rgba(70, 130, 160, 0.55);
+
+  --font-hand: 'Gaegu', cursive;
+  --font-text: 'Patrick Hand', cursive;
+  --font-ui: 'Lato', sans-serif;
+}

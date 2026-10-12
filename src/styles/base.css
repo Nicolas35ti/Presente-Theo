@@ -1,0 +1,34 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-ui);
+  color: var(--white);
+  background-color: var(--sky);
+  background-image: url('@/assets/clouds.svg');
+  background-attachment: fixed;
+}
+
+/* brilho nas bordas da tela */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 120px 30px rgba(255, 255, 255, 0.75);
+}
+
+/* renda no topo */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 12px;
+  pointer-events: none;
+  z-index: 5;
+  background: radial-gradient(circle at 8px 0, #fff 6px, transparent 7px) 0 0 / 16px 12px repeat-x;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
